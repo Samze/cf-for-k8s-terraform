@@ -4,7 +4,7 @@ Creates a cf-for-k8s env on GKE using terraform.
 
 To install:
 1. Login with `gcloud auth application-default login`
-1. Edit `config.tfvars.json` with your GCP values. Changing `env_name`, `env_dns_domain`, `region` & `zone`.
+1. Edit `example.tfvars.json` with your GCP values. Changing at a minimum `env_name`, `env_dns_domain`, `region` & `zone`.
 1. Run `./create.sh config.tfvars.json`
 
 To cleanup:
