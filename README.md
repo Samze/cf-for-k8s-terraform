@@ -8,7 +8,7 @@ To install:
 1. Run `./create.sh config.tfvars.json`
 
 To cleanup:
-1. `terraform destroy --var-file config.tfvars.json --state=<output_file.tfstate> terraform`
+1. `terraform destroy --var-file config.tfvars.json --state=<envname>-state/envname.tfstate terraform`
 
 ### Required CLI dependencies
 * terraform
