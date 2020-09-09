@@ -42,6 +42,12 @@ resource "google_container_cluster" "primary" {
     machine_type = var.node_machine_type
     service_account = google_service_account.node_service_account.email
 
+    oauth_scopes = [
+      "storage-ro",
+      "logging-write",
+      "monitoring"
+    ]
+
     metadata = {
       disable-legacy-endpoints = "true"
     }
