@@ -1,0 +1,4 @@
+[submodule "cf-for-k8s"]
+	path = cf-for-k8s
+	url = git@github.com:cloudfoundry/cf-for-k8s.git
+	branch = 47ffb600bd56dac98fb39b62671b79280ac08ae5

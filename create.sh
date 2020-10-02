@@ -25,7 +25,7 @@ GCR_KEY=$(terraform output -json --state="$TFSTATE" | jq -r .gcr_key.value)
 
 gcloud container clusters get-credentials $NAME --zone $ZONE --project $PROJECT
 
-git clone https://github.com/cloudfoundry/cf-for-k8s || true
+git submodule update --init --recursive
 
 ./cf-for-k8s/hack/generate-values.sh -d $DOMAIN > $CONFIG_VALS_DIR/cf-values.yml
 
