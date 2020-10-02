@@ -32,7 +32,9 @@ git clone https://github.com/cloudfoundry/cf-for-k8s || true
 cat << YAML > $CONFIG_VALS_DIR/static-ip.yml
 #@data/values
 ---
-istio_static_ip: $STATIC_IP
+load_balancer:
+  enable: true
+  static_ip: $STATIC_IP
 YAML
 
 

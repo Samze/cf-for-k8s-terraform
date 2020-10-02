@@ -8,14 +8,14 @@ To install:
 1. Run `./create.sh config.tfvars.json`
 
 To cleanup:
-1. `terraform destroy --var-file config.tfvars.json --state=<envname>-state/envname.tfstate terraform`
+1. `terraform destroy --var-file config.tfvars.json --state=<envname>-state/envname.tfstate terraform/`
 
 ### Required CLI dependencies
+* cf (v7 only)
 * terraform
 * bosh
 * kapp / ytt
 * gcloud
-* cf
 
 ### Notes
 Terraform modified from https://github.com/cloudfoundry/cf-for-k8s/tree/master/deploy/gke/terraform
